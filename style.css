@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.game-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #f1c40f;
+}
+
+.tagline {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #ecf0f1;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.choices button {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  padding: 15px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.choices button:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #00f7ff;
+}
+
+.choices img {
+  width: 70px;
+  height: 70px;
+}
+
+.choices span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.result-area {
+  font-size: 18px;
+}
+
+.final-result {
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #f39c12;
+}

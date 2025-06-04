@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-box">
+    <h1>🪨📄✂️ Rock Paper Scissors</h1>
+    <p class="tagline">Battle against the computer!</p>
+
+    <div class="scoreboard">
+      <div>👤 You: <span id="user-score">0</span></div>
+      <div>🤖 Computer: <span id="comp-score">0</span></div>
+    </div>
+
+    <div class="choices">
+      <button onclick="play('rock')">
+        <img src="rock.png" alt="Rock">
+        <span>Rock</span>
+      </button>
+      <button onclick="play('paper')">
+        <img src="paper.png" alt="Paper">
+        <span>Paper</span>
+      </button>
+      <button onclick="play('scissors')">
+        <img src="scissors.png" alt="Scissors">
+        <span>Scissors</span>
+      </button>
+    </div>
+
+    <div class="result-area">
+      <p><strong>You:</strong> <span id="user-choice">-</span></p>
+      <p><strong>Computer:</strong> <span id="computer-choice">-</span></p>
+      <p class="final-result" id="result">Let's play!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
